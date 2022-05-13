@@ -32,6 +32,7 @@ namespace SquareHop
             b[6] = B7;
             b[7] = B8;
             b[8] = B9;
+
         }
         Button[] b = new Button[9];
         private void Button_Click(object sender, RoutedEventArgs e)
