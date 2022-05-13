@@ -1,0 +1,52 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Data;
+using System.Windows.Documents;
+using System.Windows.Input;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
+using System.Windows.Shapes;
+
+namespace SquareHop
+{
+    /// <summary>
+    /// Interaction logic for MainWindow.xaml
+    /// </summary>
+    public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            InitializeComponent();
+            b[0] = B1;
+            b[1] = B2;
+            b[2] = B3;
+            b[3] = B4;
+            b[4] = B5;
+            b[5] = B6;
+            b[6] = B7;
+            b[7] = B8;
+            b[8] = B9;
+        }
+        Button[] b = new Button[9];
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            update();
+        }
+
+        private void update()
+        {
+            for(int x=0; x<9; x++)
+            {
+                b[x].FontSize = 80;
+                b[x].Content = "-";
+            }
+            b[0].Content = "*";
+        }
+    }
+}
