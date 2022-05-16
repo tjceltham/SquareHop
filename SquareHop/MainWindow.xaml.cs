@@ -33,21 +33,43 @@ namespace SquareHop
             b[7] = B8;
             b[8] = B9;
 
+
         }
         Button[] b = new Button[9];
+        SnakesAndLadders s = new SnakesAndLadders();
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            s.start();
             update();
         }
 
         private void update()
         {
-            for(int x=0; x<9; x++)
+
+            Board boar = s.getBoard();
+            for(int x=0; x<6; x++)
             {
-                b[x].FontSize = 80;
-                b[x].Content = "-";
+                if (boar.getBoard()[x] == 0)
+                {
+                    
+                    b[x].Content = "-";
+
+                }
+                else
+
+                {
+                    b[x].FontSize = 80;
+                   b[x].Content = "*";
+                }
             }
-            b[0].Content = "*";
+          
+        }
+
+        private void BR_Click(object sender, RoutedEventArgs e)
+        {
+           int i = s.roll();
+           update();
+            if (i == 1)  MessageBox.Show("gds");
         }
     }
 }
