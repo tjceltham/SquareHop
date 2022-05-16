@@ -60,6 +60,7 @@ namespace SquareHop
                 {
                     b[x].FontSize = 80;
                    b[x].Content = "*";
+
                 }
             }
           
