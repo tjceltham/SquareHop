@@ -56,10 +56,9 @@ namespace SquareHop
 
                 }
                 else
-
                 {
                     b[x].FontSize = 80;
-                   b[x].Content = "*";
+                    b[x].Content = "*";
 
                 }
             }

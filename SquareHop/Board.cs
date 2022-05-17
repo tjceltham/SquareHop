@@ -24,6 +24,10 @@ namespace SquareHop
         
         public void updateBoard(int x)
         {
+            // use a the number x to update the position 
+            // of the counter on the board
+            // a position with a counter 
+            // is represented by a 1 in the booard array
 
         }
 

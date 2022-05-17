@@ -6,10 +6,15 @@ namespace SquareHop
 {
     class SnakesAndLadders
     {
-        Board b;
-        public void start()
+        private Board b;
+
+        public SnakesAndLadders()
         {
             b = new Board();
+        }
+        public void start()
+        {
+       
         }
         // returns win code
         // O - still playing
@@ -18,6 +23,9 @@ namespace SquareHop
         public int roll()
         {
             int WinCode = 0;
+            // Complete this subroutine
+            // it should generate a random number between 1 and 6 
+            // and call updateBoard with that number
 
             return WinCode;
         }
