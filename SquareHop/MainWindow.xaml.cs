@@ -32,11 +32,11 @@ namespace SquareHop
             b[6] = B7;
             b[7] = B8;
             b[8] = B9;
-
+            s = new SnakesAndLadders();
 
         }
-        Button[] b = new Button[9];
-        SnakesAndLadders s = new SnakesAndLadders();
+        private Button[] b = new Button[9];
+        private SnakesAndLadders s;
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             s.start();
@@ -69,7 +69,7 @@ namespace SquareHop
         {
            int i = s.roll();
            update();
-            if (i == 1)  MessageBox.Show("gds");
+            if (i == 1)  MessageBox.Show("We have a winner");
         }
     }
 }

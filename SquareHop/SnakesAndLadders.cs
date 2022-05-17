@@ -10,11 +10,11 @@ namespace SquareHop
 
         public SnakesAndLadders()
         {
-            b = new Board();
+            
         }
         public void start()
         {
-       
+            b = new Board();
         }
         // returns win code
         // O - still playing
@@ -26,6 +26,7 @@ namespace SquareHop
             // Complete this subroutine
             // it should generate a random number between 1 and 6 
             // and call updateBoard with that number
+
 
             return WinCode;
         }

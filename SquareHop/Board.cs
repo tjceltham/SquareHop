@@ -9,11 +9,12 @@ namespace SquareHop
         // 0 - empty
         // 1- counter Blue
         // 2 - Counter red( if implement 2-player game)
-        private int[] board = new int[6];
+        const int BOARD_SIZE = 6;
+        private int[] board = new int[BOARD_SIZE];
 
         public Board()
         {
-            for(int x=1; x<6; x++)
+            for(int x=1; x<BOARD_SIZE; x++)
             {
                 // empty positions
                 board[x] = 0;
@@ -28,6 +29,8 @@ namespace SquareHop
             // of the counter on the board
             // a position with a counter 
             // is represented by a 1 in the booard array
+            // you can add snakes and ladders if you wish
+
 
         }
 
